@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">LUIS LAGOA</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">EXPERIENCIA</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">HOBBYS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <!-- Aquí añadimos el video de fondo -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="videos\video2.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+    </div>
+
+    <!-- Contenido del banner -->
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="/img/perfil.jpg" alt="foto de perfil">
+        </div>
+        <h1>LUIS LAGOA</h1>
+        <h2>DEV</h2>
+        <div class="redes">
+            <a href="https://www.facebook.com/luisangel.lagoaromero" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lagoaluis/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/LuisLagoa" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p>
+                <span>Hola, soy Luis Lagoa.</span>
+                Soy Técnico Superior en Análisis, Desarrollo y Programación de Aplicaciones. Me apasiona la tecnología y tengo un buen manejo de herramientas y metodologías actuales. Me gusta aplicar todo lo que sé para desarrollar soluciones virtuales que resuelvan problemas reales. Además, me aseguro siempre de seguir las normativas legales, técnicas y éticas en cada proyecto que emprendo. Creo firmemente en la importancia de hacer las cosas de manera correcta, no solo por cumplir con las reglas, sino también porque garantiza que el producto final sea ​​seguro, eficiente y confiable. Mi objetivo es que cada solución que desarrollo tenga un impacto positivo, ofreciendo calidad y sostenibilidad en el tiempo. Me tomo muy en serio la responsabilidad de entregar un trabajo bien hecho, en tiempo y forma y que esté a la altura de los estándares más altos.
+            </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nombre completo</strong>
+                            Luis Lagoa
+                        </li>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29/10/1987
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +549247447606
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luislago7@gmail.com
+                        </li>
+                        <li>
+                            <strong>Nacionalidad</strong>
+                            Argentino
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>PASATIEMPOS</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELÍCULAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-guitar"></i>
+                            <span>HACER MUSICA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+              <!-- SECCION CV -->   
+                <a href="docs/CV PDF.pdf" target="_blank">Descargar CV</a>
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Estas son algunas herramientas y tecnologías con las que estoy familiarizado</h2>
+        <div class="imagenes-skills">
+            <img src="img\ICONS\JavaScript.png" alt="Skill 8" width="95" height="95">
+            <img src="img\ICONS\Python.png" alt="Skill 13" width="95" height="95">
+            <img src="img\ICONS\SQL Server.png" alt="Skill 15" width="95" height="95">
+            <img src="img\ICONS\C Sharp.png" alt="Skill 3" width="95" height="95">
+            <img src="img\ICONS\NET Framework.png" alt="Skill 1" width="95" height="95">
+            <img src="img\ICONS\CSS3.png" alt="Skill 5" width="95" height="95">
+            <img src="img\ICONS\Html 5.png" alt="Skill 5" width="95" height="95">
+            <img src="img\ICONS\MySQL Logo.png" alt="Skill 10" width="95" height="95">
+            <img src="img\ICONS\PostgreSQL.png" alt="Skill 11" width="95" height="95">
+            <img src="img\ICONS\Git.png" alt="Skill 7" width="95" height="95">
+            <img src="img\ICONS\Linux.png" alt="Skill 9" width="95" height="95">
+            <img src="img\ICONS\Bash.png" alt="Skill 2" width="95" height="95">
+            <img src="img\ICONS\Ubuntu.png" alt="Skill 17" width="95" height="95">
+            <img src="img\ICONS\Windows XP.png" alt="Skill 20" width="95" height="95">
+            <img src="img\ICONS\Visual Studio Code 2019.png" alt="Skill 18" width="95" height="95">
+            <img src="img\ICONS\Visual Studio.png" alt="Skill 19" width="95" height="95">
+            <img src="img\ICONS\SAP.png" alt="Skill 14" width="95" height="95">
+            <img src="img\ICONS\Figma.png" alt="Skill 6" width="95" height="95">    
+            <img src="img\ICONS\Sublime Text.png" alt="Skill 16" width="95" height="95">
+            <img src="img\ICONS\PyCharm.png" alt="Skill 12" width="95" height="95">
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Experiencia Académica</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <div class="item izq">
+                        <h4>Terciario</h4>
+                        <span class="casa">Tecnicatura Superior en Análisis, Desarrollo y Programación de Aplicaciones.</span>
+                        <span class="fecha">2023-Actualmente.</span>
+                        <p>Instituto Superior de Formación Docente y Técnica N°93.</p>
+                        <p>San Vicente, Buenos Aires.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundario</h4>
+                        <span class="casa">Bachillerato en Ciencias Sociales Especializadas en Políticas Públicas.</span>
+                        <span class="fecha">2015-2016</span>
+                        <p>CENS N*451</p>
+                        <p>Adrogue, Buenos Aires.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <p>*	Gestion de base de Datos.</p>
+                        <p>*	Experiencia de Usuario
+                                Interfaz de Usuario (UX/UI)</p>
+                        <p>*	Diseño Web</p>
+                        <p>*	Programacion Orientada a Objetos</p>
+                        <p>*	Produccion de Software</p>
+                        <p>*	Practicas Profesionalizantes</p>
+                        <p>*	Diseño e Implementacion de Sistemas</p>
+                        <p>*	Testing y Documentacion</p>
+                        <p>*	Bussines Intelligence</p>
+                        <p>*	C# - Visual C# - C++ - PHP - SQL</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>HOBBYS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CLASICOS</h3>
+                        <p>Reliquias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>MI SEGUNDO AMOR</h3>
+                        <p>Armonias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>NATURALEZA</h3>
+                        <p>Firma de un Creador</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>AVENTURA</h3>
+                        <p>Espontaneidad</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>ALGORITMOS</h3>
+                        <p>Amo lo que se hacer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>FAMILIA</h3>
+                        <p>Lo primero y lo ultimo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Longchamps, Buenos Aires.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: 2474476206
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: luislagoa7@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/luisangel.lagoaromero" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/lagoaluis/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/LuisLagoa" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+    </footer>
+    <footer>
+        <p>&copy;Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
